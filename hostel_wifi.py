@@ -1,10 +1,11 @@
 import os
-os.system("netsh wlan connect name=Hostel-1")
+os.system("netsh wlan disconnect")
 import requests
 import time
-#----ONLY CHANGE THESE TWO VALUES----#
-USERNAME_VALUE = "your roll no."
-PASSWORD_VALUE = "your password"
+#----ONLY CHANGE THESE THREE VALUES----#
+os.system("netsh wlan connect name=CAMPUS-WIFI")
+USERNAME_VALUE = "btech1013425"
+PASSWORD_VALUE = "8008299586"
 #----DO NOT CHANGE BELOW UNLESS YOU KNOW WHAT YOU ARE DOING----#
 BASE_URL  = "http://192.168.0.2:8090"
 LOGIN_URL = f"{BASE_URL}/login.xml"
